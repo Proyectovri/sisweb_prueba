@@ -49,7 +49,7 @@
                                         <form method="POST" action="{{route('login')}}" >
                                             @csrf
                                         <div class="">
-                                            <h1 class="mb-2">Bienvenido</h1>
+                                            <h1 class="mb-2">Prueba  </h1>
                                             <p class="text-muted"></p>
                                         </div>                                    
                                         <hr class="my-5">
