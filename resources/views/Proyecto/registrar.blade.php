@@ -8,7 +8,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="card-title">
-                                           Registrar Proyecto
+                                           Registrar Commti 2
                                         </div>
                                     </div>
                                     <div class="card-body">
