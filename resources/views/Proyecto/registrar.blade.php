@@ -8,7 +8,7 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="card-title">
-                                           Registrar Commti 2
+                                           Registrar Commit 3
                                         </div>
                                     </div>
                                     <div class="card-body">
