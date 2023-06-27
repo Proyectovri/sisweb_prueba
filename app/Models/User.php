@@ -17,20 +17,21 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
 
+    protected $table = 'usuario';    
     /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
      */
+    protected $fillable = [
+        'Usua_Responsable',
+        'Usua_Clave',
+        'Usua_correo',
+    ];
+   
     protected $hidden = [
-        'password',
-        'remember_token',
+        'Usua_Clave',
     ];
 
     /**
@@ -38,8 +39,8 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-        'password' => 'hashed',
-    ];
+    public function getAuthPassword()
+    {
+        return $this->Usua_Clave;
+    }
 }

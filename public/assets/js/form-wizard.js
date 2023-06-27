@@ -8,7 +8,7 @@
 		autoButtonsPrevClass: 'btn btn-light',
 		stepNumberClass: 'badge rounded-pill bg-primary me-1',
 		onSubmit: function() {
-		  alert('Form submitted!');
+		  //alert('Form submitted!'); comentado por betxy
 		  return true;
 		}
 	}

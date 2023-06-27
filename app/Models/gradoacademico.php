@@ -9,5 +9,5 @@ class gradoacademico extends Model
 {
     use HasFactory;
 
-    protected $table = 'gradoacademico';
+    protected $table = 'm_gradoacademico';
 }

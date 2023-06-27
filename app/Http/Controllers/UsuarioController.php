@@ -41,9 +41,11 @@ class UsuarioController extends Controller
         $docente = new docente;
         $docente->FK_Carrera_Docente = $request->escuela;
         $docente->FK_GradoAcademico_Docente = $request->grado;
+        $docente->Doce_TipoIntegrante = 1;
         $docente->Doce_DNI = $request->dni;
         $docente->Doce_Nombre = $request->nombre;
         $docente->Doce_Apellido = $request->apellidos;
+     
         $docente->Doce_Celular = $request->celular;
         $docente->Doce_Correo  = $request->correo;
         $docente->Doce_Mencion =  $request->mencion;
@@ -56,14 +58,13 @@ class UsuarioController extends Controller
         $usuario->Usua_Responsable = $request->nombre;
         $usuario->Usua_Correo  = $request->correo;
         $password = Str::random(8);
-        $usuario->Usua_Clave =  Hash::make($password);;
+        $name=$password;
+        $usuario->Usua_Clave =  Hash::make($password);
         $usuario->Usu_Estado = '1';
         $usuario->save();
-        Mail::to($request->correo)->send(new Notificacion("juan"));
+        Mail::to($request->correo)->send(new Notificacion($name));
 
-        return view('welcome');
-
-        //return Str::random(5);
+        return view('auth.login');
     }
 
     //validar los input

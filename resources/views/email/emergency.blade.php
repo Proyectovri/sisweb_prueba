@@ -14,8 +14,8 @@
 </head>
 
 <body>
-   <h1>hola saludos</h1>
-   <p>esto es otro ejejejejejejejeej {{$name}}</p>
+   <h1>Bienvenidos al sistemas</h1>
+   <p>Se ha creado correctamente tu usuario, tu contraseña es : {{$name}}</p>
 </body>
 
 </html>
