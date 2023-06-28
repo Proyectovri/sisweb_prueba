@@ -13,9 +13,28 @@
 
 </head>
 
-<body>
-   <h1>Bienvenidos al sistemas</h1>
-   <p>Se ha creado correctamente tu usuario, tu contraseña es : {{$name}}</p>
+<body style="background:#E0E0E0; padding:25px; display: flex; justify-content: center; align-items: center; margin: 0">
+  <div class="card"
+  style="width: 500px; padding: 20px; background-color: #fff; border-radius: 10px; border-top: 5px solid #4454c3;">
+  <img src='../public/assets/images/pattern/logo-lg-unu.png' alt="Logo UNU" height=55> &nbsp;&nbsp;
+  <img src="../public/assets/images/pattern/logo-lg-vri.png" alt="Logo VRI-UNU" height=55>
+  <hr>
+  <h3>Bienvenido a SISVRI</h3>
+  <p>
+  <p>Se ha creado correctamente tu usuario para acceder al sistema. <br>
+    Tu contraseña es: <b>{{$name}}</b></p>
+  <p style="margin:0px;padding:0px;font-size:16px;line-height:1.65"><a href="#"
+      style="color:white;margin:0px;padding:0px;line-height:1.65;text-decoration-line:none;display:inline-block;background:#4454c3;border-style:solid;border-color: #4454c3;border-width:10px 20px 8px;font-weight:bold;border-radius:4px"
+      target="_blank">Iniciar sesión
+      en SISVRI</a></p>
+  </p>
+  <p>Atte.<br>
+    Sistema Web de Gestión de Proyectos de Investigación
+  </p>
+  <hr>
+  <p style='font-size:10px;font-weight:bold'> Universidad Nacional de Ucayali <br>
+    Vicerrectorado de Investigación<br> </p>
+</div>
 </body>
 
 </html>

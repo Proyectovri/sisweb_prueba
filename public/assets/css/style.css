@@ -168,6 +168,7 @@ body {
     color: #424e79;
     text-align: left;
     background: #f2f6f9;
+    
 }
 
 [tabindex="-1"]:focus {
@@ -796,6 +797,15 @@ mark,
 .fs-100 {
     font-size: 100px;
 }
+
+.logo {
+    width: 13%; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* La altura se ajustará automáticamente proporcionalmente */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Otros estilos para el logo */
+  }
 
 code,
 kbd,
