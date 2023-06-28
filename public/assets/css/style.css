@@ -29798,6 +29798,10 @@ i.fa.round {
 }
 
 /*------- Alignments & values-------*/
+
+.text-danger {
+    font-size: 1.2em;
+} 
 .text-monospace {
     font-family: Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }

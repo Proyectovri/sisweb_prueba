@@ -46,73 +46,102 @@
                         <div class="card p-4 page-content">
                             <div class="card-body page-single-content">
                                 <div class="w-100">
-                                <h1 class="mb-2" align="center">Registra Usuario</h1>                               
+                                <h1 class="mb-2" align="center">Registro de Usuario</h1>                               
                                     <div class="body">
                                         <form action="{{ route('registrar')}}" class="form-horizontal" method="post" >
                                              @csrf
-                                              <fieldset class="border p-2">
-                                                    <legend  class="float-none w-auto p-2 form-label">
-                                                        Datos Personales
-                                                    </legend>
-                                            <div class="mb-3 row">
-                                                <label for="inputName" class="col-md-2 form-label">DNI</label>
-                                                <div class="col-md-4">
-                                                     <input id="dni" name="dni" type="text" class="form-control numbersonly" value="" required="" maxlength="8" >
-                                                </div>
-                                                 <label for="inputName" class="col-md-2 form-label ">Nombre</label>
-                                                <div class="col-md-4">
-                                                     <input id="nombre" name="nombre" type="text" class="form-control UpperCase" value="" required="">
-                                                </div>
-                                            </div>
 
-                                             <div class="mb-3 row">
-                                                <label for="inputName" class="col-md-2 form-label">Apellidos</label>
-                                                <div class="col-md-4">
-                                                     <input id="apellidos" name="apellidos" type="text" class="form-control UpperCase" value="" required="">
-                                                </div>
-                                                 <label for="inputName" class="col-md-2 form-label">celular</label>
-                                                <div class="col-md-4">
-                                                     <input id="celular" name="celular" type="text" class="form-control numbersonly" placeholder="" required="" maxlength="9">
-                                                </div>
-                                            </div>                                            
-                                             </fieldset>
-                                             <fieldset class="border p-2">
+                                            <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
                                                     <legend  class="float-none w-auto p-2 form-label">
-                                                        Datos Academicos
+                                                        Datos del Usuario
                                                     </legend>
-                                            <div class="mb-3 row">
-                                                <label for="inputName" class="col-md-2 form-label">Escuela</label>
-                                                <div class="col-md-4">
-                                                     <select id="escuela" name="escuela" class="form-control form-select select2">
-                                                                 @foreach ($carreras as $escu)
+
+                                                <div class="mb-3 row">
+                                                    <label for="inputName" class="col-md-2 form-label">DNI<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                             <input id="dni" name="dni" type="text" class="form-control numbersonly @error('dni') is-invalid @enderror" value="" required="" maxlength="8" >
+                                                             @error('dni')
+                                            <div class="invalid-feedback">
+                                                DNI inválido
+                                            </div>
+                                            @enderror
+                                                        </div>
+                                                            <label for="inputName" class="col-md-2 form-label ">Nombres<span class="text-danger">*</span></label>
+                                                        <div class="col-md-4">
+                                                            <input id="nombre" name="nombre" type="text" class="form-control UpperCase" value="" required="">
+                                                        </div>
+                                                </div>
+
+                                                <div class="mb-3 row">
+                                                    <label for="inputName" class="col-md-2 form-label">Apellidos<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                            <input id="apellidos" name="apellidos" type="text" class="form-control UpperCase" value="" required="">
+                                                        </div>
+                                                    <label for="inputName" class="col-md-2 form-label">Celular<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                            <input id="celular" name="celular" type="text" class="form-control numbersonly" placeholder="" required="" maxlength="9">
+                                                        </div>
+                                                </div>
+
+                                             </fieldset>
+                                            
+
+                                             <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
+                                                    <legend  class="float-none w-auto p-2 form-label">
+                                                        Datos Academicos del Usuario
+                                                    </legend>
+
+                                                <div class="mb-3 row">
+                                                    <label for="inputName" class="col-md-2 form-label">Facultad<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                            <select name="facultad" id="facultad" class="form-control form-select select2">
+                                                                <option value="facultad1">FISeIC</option>
+                                                                <option value="facultad2">FDyCP</option>
+                                                                <option value="facultad3">FAEyC</option>
+                                                                <option value="facultad4">FEyCs</option>
+                                                                <option value="facultad5">FCA</option>
+                                                                <option value="facultad6">FMS</option>
+                                                                <option value="facultad7">FCS</option>
+                                                                <option value="facultad8">FCFyA</option>
+                                                            </select>
+                                                        </div>
+                                                    <label for="inputName" class="col-md-2 form-label">Escuela<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                            <select id="escuela" name="escuela" class="form-control form-select select2">
+                                                                @foreach ($carreras as $escu)
                                                                     <option value="{{  $escu->PK_Carrera }}">{{  $escu->Carr_Nombre }}</option>
-                                                                    @endforeach
+                                                                @endforeach
                                                             </select>
+                                                        </div>
                                                 </div>
-                                                 <label for="inputName" class="col-md-2 form-label">Correo Institucional</label>
-                                                <div class="col-md-4">
-                                                      <input id="correo" name="correo" type="email" class="form-control" value="" required="">
-                                                </div>
-                                            </div>
 
-                                             <div class="mb-3 row">
-                                                <label for="inputName" class="col-md-2 form-label">Grado Academico</label>
-                                                <div class="col-md-4">
-                                                     <select name="grado" id="grado" class="form-control form-select select2">
-                                                               @foreach ($gradosacademicos as $grado)
+                                                <div class="mb-3 row">
+                                                    <label for="inputName" class="col-md-2 form-label">Correo Institucional<span class="text-danger">*</span></label>
+                                                        <div class="col-md-4">
+                                                            <input id="correo" name="Usua_correo" type="email" class="form-control" value="" required="">
+                                                        </div>
+                                                    <label for="inputName" class="col-md-2 form-label">Grado Academico<span class="text-danger"> *</span></label>
+                                                        <div class="col-md-4">
+                                                            <select name="grado" id="grado" class="form-control form-select select2">
+                                                                @foreach ($gradosacademicos as $grado)
                                                                     <option value="{{  $grado->PK_GradoAcademico }}">{{  $grado->Gaca_Abreviatura }}</option>
-                                                                    @endforeach
+                                                                @endforeach
                                                             </select>
-                                                </div>
-                                                 <label for="inputName" class="col-md-2 form-label">Mencion</label>
-                                                <div class="col-md-4">
-                                                      <input id="mencion" name="mencion" type="text" class="form-control UpperCase" placeholder="">
-                                            </div>                                            
-                                             </fieldset>
+                                                        </div>
+                                                </div> 
+
+                                                <div class="mb-3 row">
+                                                     <div class="col-md-12">
+                                                        <label for="inputName" class="form-label">Mención</label>
+                                                        <input id="mencion" name="mencion" type="text" class="form-control UpperCase" placeholder="" style="width: 100%;">
+                                                    </div>
+                                                </div>     
+                                                </fieldset>
+
                                             <div class="mb-0 mt-4 row justify-content-center">
                                                 <div class="col-6">
-                                                   <div class="text-center pt-1 mb-5 pb-1">
-                                                    <button type="submit" class="btn btn-lg btn-primary btn-block" type="button"><i class="fe fe-save"></i>Registrar</button>
+                                                   <div class="text-center pt-1 pb-1">
+                                                    <button type="submit" class="btn btn-lg btn-primary btn-block" type="button"><i class="fe fe-save"></i> Registrar</button>
                                                 </div>  
                                                 </div>
                                             </div>
@@ -121,9 +150,6 @@
                                 </div>
                             </div>
                         </div>                        
-                    </div>
-                    <div class="text-center pt-4">
-                        <div class="font-weight-normal fs-16">You Already have an account <a class="btn-link font-weight-normal" href="login-3.html">Login Here</a></div>
                     </div>
                 </div>
             </div>
