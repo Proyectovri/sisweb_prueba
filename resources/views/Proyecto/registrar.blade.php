@@ -15,7 +15,7 @@
                                         <form method="POST" action="{{route('proyecto')}}" id='form'  enctype="multipart/form-data">
                                             @csrf
                                             <div id="wizard2">
-                                                <h3>Datos Cambio de prueba</h3>
+                                                <h3>Datos Cambio de Ori</h3>
                                                 <section>                                               
                                                     <div class="row">
                                                         <div class="col-lg-2 col-md-12"></div>
