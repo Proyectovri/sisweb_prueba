@@ -21,7 +21,7 @@
   <hr>
   <h3>Bienvenido a SISVRI</h3>
   <p>
-  <p>Se ha creado correctamente tu usuario para acceder al sistema. <br>
+  <p>Se ha creado exitosamente tu usuario para acceder al sistema. <br>
     Tu contraseña es: <b>{{$name}}</b></p>
   <p style="margin:0px;padding:0px;font-size:16px;line-height:1.65"><a href="#"
       style="color:white;margin:0px;padding:0px;line-height:1.65;text-decoration-line:none;display:inline-block;background:#4454c3;border-style:solid;border-color: #4454c3;border-width:10px 20px 8px;font-weight:bold;border-radius:4px"
