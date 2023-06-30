@@ -103,6 +103,7 @@
                 </div>
             <!-- Logo en el sidebar fin -->
                     <div class="main-sidemenu">
+                        <!-- Foto y nombre del usser inicio -->
                         <div class="app-sidebar__user">
                             <div class="dropdown user-pro-body text-center">
                                 <div class="user-pic">
@@ -114,7 +115,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg></div>
+                        <!-- Foto y nombre del usser fin -->
+
+                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg>
+                        </div>
+
                         <ul class="side-menu">
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
@@ -128,8 +133,8 @@
                                     
                                 </ul>
                             </li>
-                            
-                        </ul>                        
+                        </ul>
+
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg></div>
                     </div>
                 </aside>
@@ -140,11 +145,33 @@
             <div class="app-content main-content">
                 <div class="side-app">
                     <div class="container-fluid main-container">
-
+                        <br></br>
+                        <h2>Bienvenido(a), Euclides Panduro Padilla</h2>
+                    <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
+                        <div>
+                        <legend>Presentación de Proyectos</legend>
+                            <p>
+                                Este es el sistema para presentación de proyectos a los concursos de financiamiento que convoca el Vicerrectorado de Investigación de la Universidad Nacional de Ucayali, facilitando los procesos de inscripción, presentación, sustentación, seguimiento de avances y cierre de los proyectos que resulten ganadores.
+                            </p>
+                            <p> 
+                                Al lado izquierdo tiene el menú de opciones (<svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>), el cual deberá revisar uno por uno para usar correctamente el sistema. La información y documentación proporcionada en el sistema queda bajo responsabilidad del docente.
+                            </p>
+                            <p>
+                                <strong>Nota:</strong> En caso de tener algún inconveniente con el sistema, por favor contáctese con nosotros para darle solución inmediatamente.
+                            </p>
+                            <p>
+                                Atte.<br>
+                                Soporte SOFIA<br>
+                                Vicerrectorado de Investigación<br>
+                                Universidad Nacional de Ucayali
+                            </p>
+                        </div>
+                    </fieldset> 
                     @yield('contents')
                     </div>
                 </div>
             </div>
+
             <!-- end app-content-->
         </div>
 
