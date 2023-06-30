@@ -51,7 +51,7 @@
                                         <form action="{{ route('registrar')}}" class="form-horizontal" method="post" >
                                              @csrf
 
-                                            <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
+                                            <fieldset class="border p-2" style="border: 2px solid #4454C3 !important;">
                                                     <legend  class="float-none w-auto p-2 form-label">
                                                         Datos del Usuario
                                                     </legend>
@@ -86,7 +86,7 @@
                                              </fieldset>
                                             
 
-                                             <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
+                                             <fieldset class="border p-2" style="border: 2px solid #4454C3 !important;">
                                                     <legend  class="float-none w-auto p-2 form-label">
                                                         Datos Academicos del Usuario
                                                     </legend>
@@ -140,9 +140,14 @@
 
                                             <div class="mb-0 mt-4 row justify-content-center">
                                                 <div class="col-6">
+                                                    <div class="text-center pt-1 pb-1">
+                                                        <a href="#" class="btn btn-danger btn-block" type="button" ><- Volver</a>
+                                                    </div>  
+                                                </div>
+                                                <div class="col-6">
                                                    <div class="text-center pt-1 pb-1">
                                                     <button type="submit" class="btn btn-lg btn-primary btn-block" type="button"><i class="fe fe-save"></i> Registrar</button>
-                                                </div>  
+                                                    </div>  
                                                 </div>
                                             </div>
                                         </form>
