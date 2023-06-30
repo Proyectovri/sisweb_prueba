@@ -52,12 +52,8 @@
                             </div>
                         </div>
                         <a class="header-brand" href="index.html">
-                            <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/logo1.png" class="header-brand-img dark-logo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dashtic logo">
                         </a>
-                        <div class="dropdown  header-option">
+                           <div class="dropdown  header-option">
                             
                         </div>
                         <div class="d-flex order-lg-2 ms-lg-auto">
@@ -99,12 +95,13 @@
             <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
             <div class="sticky">
                 <aside class="app-sidebar sidebar-scroll">
-                    <div class="main-sidebar-header active">
-                        <a class="desktop-logo logo-light active" href="index.html"><img src="../assets/images/brand/logo.png" class="main-logo" alt="logo"></a>
-                        <a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/images/brand/logo1.png" class="main-logo" alt="logo"></a>
-                        <a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="../assets/images/brand/favicon.png" alt="logo"></a>
-                        <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/images/brand/favicon1.png" alt="logo"></a>
+            <!-- Logo en el sidebar inicio -->
+                <div class="main-sidebar-header active">
+                    <div class="row">
+                                <img src="../assets/images/pattern/logos.png" alt="Logo" class="logo" style="width: 150px; position: absolute; left: 50%; transform: translateX(-50%);">    
                     </div>
+                </div>
+            <!-- Logo en el sidebar fin -->
                     <div class="main-sidemenu">
                         <div class="app-sidebar__user">
                             <div class="dropdown user-pro-body text-center">
@@ -113,7 +110,7 @@
                                 </div>
                                 <div class="user-info text-center">
                                     <h5 class=" mb-1 font-weight-bold"></h5>
-                                    <span class="text-muted app-sidebar__user-name text-sm">App Developer</span>
+                                    <span class="text-muted app-sidebar__user-name text-sm">Euclides Panduro Padilla</span>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +122,7 @@
                                     <span class="side-menu__label">Gestion</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
                                     <li class="side-menu-label1"><a href="javascript:void(0)">Gestion</a></li>
-                                    <li><a class="slide-item" href="index.html"><span>Convocatoria</span></a></li>
+                                    <li><a class="slide-item" href="index.html"><span>Convocatorias</span></a></li>
                                     <li><a class="slide-item" href="index.html"><span>Proyectos</span></a></li>
                                     <li><a class="slide-item" href="{{ ('proyecto') }}"><span>Registrar proyecto</span></a></li>
                                     
@@ -156,7 +153,7 @@
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
                     <div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
-                         Copyright © 2022 <a href="javascript:void(0);" class="text-primary">Dashtic</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="javascript:void(0);"> Spruko </a> All rights reserved.
+                         Vicerrectorado de Investigación © 2023
                     </div>
                 </div>
             </div>
