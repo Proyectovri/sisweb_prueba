@@ -147,26 +147,26 @@
                     <div class="container-fluid main-container">
                         <br></br>
                         <h2>Bienvenido(a), Euclides Panduro Padilla</h2>
-                    <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
-                        <div>
-                        <legend>Presentación de Proyectos</legend>
-                            <p>
-                                Este es el sistema para presentación de proyectos a los concursos de financiamiento que convoca el Vicerrectorado de Investigación de la Universidad Nacional de Ucayali, facilitando los procesos de inscripción, presentación, sustentación, seguimiento de avances y cierre de los proyectos que resulten ganadores.
+                        <div class="card" div class="card" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 10px; padding: 20px;">
+                            <div class="card-body">
+                            <h5 class="card-title">Bienvenido(a), Euclides Panduro Padilla</h5>
+                            <p class="card-text">
+                            Este es el sistema para presentación de proyectos a los concursos de financiamiento que convoca el Vicerrectorado de Investigación de la Universidad Nacional de Ucayali, facilitando los procesos de inscripción, presentación, sustentación, seguimiento de avances y cierre de los proyectos que resulten ganadores.
                             </p>
-                            <p> 
-                                Al lado izquierdo tiene el menú de opciones (<svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>), el cual deberá revisar uno por uno para usar correctamente el sistema. La información y documentación proporcionada en el sistema queda bajo responsabilidad del docente.
+                            <p class="card-text">
+                            Al lado izquierdo tiene el menú de opciones (<svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>), el cual deberá revisar uno por uno para usar correctamente el sistema. La información y documentación proporcionada en el sistema queda bajo responsabilidad del docente.
                             </p>
-                            <p>
-                                <strong>Nota:</strong> En caso de tener algún inconveniente con el sistema, por favor contáctese con nosotros para darle solución inmediatamente.
+                            <p class="card-text">
+                            <strong>Nota:</strong> En caso de tener algún inconveniente con el sistema, por favor contáctese con nosotros para darle solución inmediatamente.
                             </p>
-                            <p>
-                                Atte.<br>
-                                Soporte SOFIA<br>
-                                Vicerrectorado de Investigación<br>
-                                Universidad Nacional de Ucayali
+                            <p class="card-text">
+                            Atte.<br>
+                            Soporte SOFIA<br>
+                            Vicerrectorado de Investigación<br>
+                            Universidad Nacional de Ucayali
                             </p>
                         </div>
-                    </fieldset> 
+                        </div> 
                     @yield('contents')
                     </div>
                 </div>
