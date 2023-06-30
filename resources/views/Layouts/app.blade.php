@@ -146,7 +146,7 @@
                 <div class="side-app">
                     <div class="container-fluid main-container">
                         <br></br>
-                        <h2>Bienvenido(a), Euclides Panduro Padilla</h2>
+                        <h3>Docente Responsable</h3>
                         <div class="card" div class="card" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 10px; padding: 20px;">
                             <div class="card-body">
                             <h5 class="card-title">Bienvenido(a), Euclides Panduro Padilla</h5>
@@ -161,7 +161,7 @@
                             </p>
                             <p class="card-text">
                             Atte.<br>
-                            Soporte SOFIA<br>
+                            Soporte SISVRI<br>
                             Vicerrectorado de Investigación<br>
                             Universidad Nacional de Ucayali
                             </p>
