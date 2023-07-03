@@ -16422,7 +16422,7 @@ table.table-bordered.dataTable td:first-child {
 }
 
 .form-control.form-file-input::after {
-    content: "Browse file";
+    content: "Seleccionar archivo";
     color: #fff;
     position: absolute;
     padding: 0.5rem 0.75rem;

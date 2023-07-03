@@ -18,32 +18,36 @@ $(function() {
 			if (currentIndex < newIndex) {
 				// Step 1 form validation
 				if (currentIndex === 0) {
+					
+					var fconvocatoria = $('#FK_Convocatoria_Proyecto').parsley();
+					var ftipo = $('#FK_TipoInvestigacion_Proyecto').parsley();
+					var flinea = $('#FK_SubLineaInvestigacion_Proyecto').parsley();
+					var ffuente = $('#FK_FuenteFinanciamiento_Proyecto').parsley();
 					var fname = $('#Proy_Ubicacion').parsley();
 					var lname = $('#Pdet_Titulo').parsley();
-					if (fname.isValid() && lname.isValid()) {
-						return true;
-					} else {
-						fname.validate();
-						lname.validate();
-					}
-				}
-				// Step 2 form validation
-				if (currentIndex === 1) {
 					var fperiodo = $('#Proy_PeriodoEjecucion').parsley();
 					var ffinicio = $('#Proy_FechaInicio').parsley();
-					var fname = $('#Pdet_BienesServicios').parsley();
-					var lname = $('#Pdet_BienesCapital').parsley();
-					if (fname.isValid() && lname.isValid() && fperiodo.isValid() && ffinicio.isValid()) {
+					var fservicios = $('#Pdet_BienesServicios').parsley();
+					var lcapital = $('#Pdet_BienesCapital').parsley();
+					
+
+					if (fconvocatoria.isValid() &&  ftipo.isValid() &&  flinea.isValid() &&  ffuente.isValid() && fname.isValid() && lname.isValid() && fperiodo.isValid() && ffinicio.isValid() && fservicios.isValid() && lcapital.isValid()) {
 						return true;
 					} else {
+						fconvocatoria.validate();
+						ftipo.validate();
+						flinea.validate();
+						ffuente.validate();
 						fname.validate();
 						lname.validate();
 						fperiodo.validate();
 						ffinicio.validate();
+						fservicios.validate();
+						lcapital.validate();
 					}
 				}
-
-				if (currentIndex === 2) {
+				
+				if (currentIndex === 1) {
 					var fname = $('#miembro1').parsley();
 					var lname = $('#miembro2').parsley();
 					if (fname.isValid() && lname.isValid()) {

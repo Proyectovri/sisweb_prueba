@@ -64,7 +64,7 @@
                                                 </svg></span>
                                             <input type="email" name="Usua_Correo"
                                                 class="form-control @error('Usua_Correo') is-invalid @enderror"
-                                                placeholder="Correo institucional" requiered>
+                                                placeholder="Correo institucional" required>
 
                                             @error('Usua_Correo')
                                             <div class="invalid-feedback">
@@ -88,11 +88,11 @@
                                                 </svg></span>
                                             <input type="password" name="Usua_Clave"
                                                 class="form-control @error('Usua_Clave') is-invalid @enderror"
-                                                placeholder="Contraseña" requiered>
+                                                placeholder="Contraseña" required>
 
                                             @error('Usua_Clave')
                                             <div class="invalid-feedback">
-                                                Contraseña inválido
+                                                Contraseña inválida
                                             </div>
                                             @enderror
                                         </div>

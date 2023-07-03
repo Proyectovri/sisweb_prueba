@@ -6,7 +6,7 @@
     <div class="modal-dialog modal-lg " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="largemodal1">Registrar Integrante</h5>
+                        <h5 class="modal-title" id="largemodal1">Registrar integrante</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
@@ -45,10 +45,10 @@
                                              </fieldset>
                                              <fieldset class="border p-2">
                                                     <legend  class="float-none w-auto p-2 form-label">
-                                                        Tipo Integrante
+                                                        Datos académicos
                                                     </legend>
                                                     <div class="mb-3 row">
-                                                <label for="inputName" class="col-md-2 form-label">Tipo Investigador</label>
+                                                <label for="inputName" class="col-md-2 form-label">Tipo de investigador</label>
                                                 <div class="col-md-4">
                                                      <select id="escuela" name="escuela" class="form-control form-select select2">
                                                                @foreach ($tipoinvestigadores as $tipoin)

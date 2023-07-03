@@ -19,7 +19,7 @@
   <img src='../public/assets/images/pattern/logo-lg-unu.png' alt="Logo UNU" height=55> &nbsp;&nbsp;
   <img src="../public/assets/images/pattern/logo-lg-vri.png" alt="Logo VRI-UNU" height=55>
   <hr>
-  <h3>Bienvenido a SISVRI</h3>
+  <h2>Bienvenido a SISVRI</h2>
   <p>
   <p>Se ha creado exitosamente tu usuario para acceder al sistema. <br>
     Tu contraseña es: <b>{{$name}}</b></p>

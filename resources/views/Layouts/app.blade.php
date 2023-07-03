@@ -29,7 +29,7 @@
     <link href="../assets/plugins/web-fonts/plugin.css" rel="stylesheet" />
 
   
-      <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    
 
 </head>
 
@@ -122,9 +122,9 @@
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
                                     <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                                    <span class="side-menu__label">Gestion</span><i class="angle fe fe-chevron-right"></i></a>
+                                    <span class="side-menu__label">Gestión</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Gestion</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Gestión</a></li>
                                     <li><a class="slide-item" href="index.html"><span>Convocatoria</span></a></li>
                                     <li><a class="slide-item" href="index.html"><span>Proyectos</span></a></li>
                                     <li><a class="slide-item" href="{{ ('proyecto') }}"><span>Registrar proyecto</span></a></li>
@@ -155,8 +155,8 @@
         <footer class="footer">
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
-                    <div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
-                         Copyright © 2022 <a href="javascript:void(0);" class="text-primary">Dashtic</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="javascript:void(0);"> Spruko </a> All rights reserved.
+                    <div class="text-center">
+                        <div class="font-weight-normal fs-16">Vicerrectorado de Investigacion © 2023</div>
                     </div>
                 </div>
             </div>
@@ -170,6 +170,7 @@
         <script src="../assets/js/vendors/jquery.min.js"></script>
  <!-- Bootstrap5 js-->
     <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>   
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!--Othercharts js-->
     <script src="../assets/plugins/othercharts/jquery.sparkline.min.js"></script>
@@ -213,8 +214,16 @@
     <script src="../assets/js/switcher-styles.js"></script>
 
     <!-- Custom js-->
-    <script src="../assets/js/custom.js"></script>
-  
+    <script src="../assets/js/custom.js"></script> 
+
+    <!-- tooltip js -->
+    <script src="../assets/js/tooltip.js"></script>
+
+    <!-- Sweet alert js -->
+    <script src="../assets/plugins/sweet-alert/jquery.sweet-modal.min.js"></script>
+    <script src="../assets/plugins/sweet-alert/sweetalert.min.js"></script>
+    <script src="../assets/js/sweet-alert.js"></script>
+
   
 </body>
  @yield('script')
