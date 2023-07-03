@@ -52,12 +52,8 @@
                             </div>
                         </div>
                         <a class="header-brand" href="index.html">
-                            <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-lgo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/logo1.png" class="header-brand-img dark-logo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/favicon.png" class="header-brand-img mobile-logo" alt="Dashtic logo">
-                            <img src="../assets/images/brand/favicon1.png" class="header-brand-img darkmobile-logo" alt="Dashtic logo">
                         </a>
-                        <div class="dropdown  header-option">
+                           <div class="dropdown  header-option">
                             
                         </div>
                         <div class="d-flex order-lg-2 ms-lg-auto">
@@ -99,13 +95,15 @@
             <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
             <div class="sticky">
                 <aside class="app-sidebar sidebar-scroll">
-                    <div class="main-sidebar-header active">
-                        <a class="desktop-logo logo-light active" href="index.html"><img src="../assets/images/brand/logo.png" class="main-logo" alt="logo"></a>
-                        <a class="desktop-logo logo-dark active" href="index.html"><img src="../assets/images/brand/logo1.png" class="main-logo" alt="logo"></a>
-                        <a class="logo-icon mobile-logo icon-light active" href="index.html"><img src="../assets/images/brand/favicon.png" alt="logo"></a>
-                        <a class="logo-icon mobile-logo icon-dark active" href="index.html"><img src="../assets/images/brand/favicon1.png" alt="logo"></a>
+            <!-- Logo en el sidebar inicio -->
+                <div class="main-sidebar-header active">
+                    <div class="row">
+                                <img src="../assets/images/pattern/logos.png" alt="Logo" class="logo" style="width: 150px; position: absolute; left: 50%; transform: translateX(-50%);">    
                     </div>
+                </div>
+            <!-- Logo en el sidebar fin -->
                     <div class="main-sidemenu">
+                        <!-- Foto y nombre del usser inicio -->
                         <div class="app-sidebar__user">
                             <div class="dropdown user-pro-body text-center">
                                 <div class="user-pic">
@@ -113,26 +111,35 @@
                                 </div>
                                 <div class="user-info text-center">
                                     <h5 class=" mb-1 font-weight-bold"></h5>
-                                    <span class="text-muted app-sidebar__user-name text-sm">App Developer</span>
+                                    <span class="text-muted app-sidebar__user-name text-sm">Euclides Panduro Padilla</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg></div>
+                        <!-- Foto y nombre del usser fin -->
+
+                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg>
+                        </div>
+
                         <ul class="side-menu">
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)">
                                     <svg class="side-menu__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                                     <span class="side-menu__label">Gestión</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
+<<<<<<< HEAD
                                     <li class="side-menu-label1"><a href="javascript:void(0)">Gestión</a></li>
                                     <li><a class="slide-item" href="index.html"><span>Convocatoria</span></a></li>
+=======
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Gestion</a></li>
+                                    <li><a class="slide-item" href="index.html"><span>Convocatorias</span></a></li>
+>>>>>>> 3d3ee25a865a72c612b3ebac9b9bbb7189724183
                                     <li><a class="slide-item" href="index.html"><span>Proyectos</span></a></li>
                                     <li><a class="slide-item" href="{{ ('proyecto') }}"><span>Registrar proyecto</span></a></li>
                                     
                                 </ul>
                             </li>
-                            
-                        </ul>                        
+                        </ul>
+
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg></div>
                     </div>
                 </aside>
@@ -143,11 +150,33 @@
             <div class="app-content main-content">
                 <div class="side-app">
                     <div class="container-fluid main-container">
-
+                        <br></br>
+                        <h3>Docente Responsable</h3>
+                        <div class="card" div class="card" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 10px; padding: 20px;">
+                            <div class="card-body">
+                            <h5 class="card-title">Bienvenido(a), Euclides Panduro Padilla</h5>
+                            <p class="card-text">
+                            Este es el sistema para presentación de proyectos a los concursos de financiamiento que convoca el Vicerrectorado de Investigación de la Universidad Nacional de Ucayali, facilitando los procesos de inscripción, presentación, sustentación, seguimiento de avances y cierre de los proyectos que resulten ganadores.
+                            </p>
+                            <p class="card-text">
+                            Al lado izquierdo tiene el menú de opciones (<svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>), el cual deberá revisar uno por uno para usar correctamente el sistema. La información y documentación proporcionada en el sistema queda bajo responsabilidad del docente.
+                            </p>
+                            <p class="card-text">
+                            <strong>Nota:</strong> En caso de tener algún inconveniente con el sistema, por favor contáctese con nosotros para darle solución inmediatamente.
+                            </p>
+                            <p class="card-text">
+                            Atte.<br>
+                            Soporte SISVRI<br>
+                            Vicerrectorado de Investigación<br>
+                            Universidad Nacional de Ucayali
+                            </p>
+                        </div>
+                        </div> 
                     @yield('contents')
                     </div>
                 </div>
             </div>
+
             <!-- end app-content-->
         </div>
 

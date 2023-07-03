@@ -54,10 +54,10 @@
                                         <form action="{{ route('registrar')}}" class="form-horizontal" method="post">
                                             @csrf
 
-                                            <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
-                                                <legend class="float-none w-auto p-2 form-label">
-                                                    Datos del Usuario
-                                                </legend>
+                                            <fieldset class="border p-2" style="border: 2px solid #4454C3 !important;">
+                                                    <legend  class="float-none w-auto p-2 form-label">
+                                                        Datos del Usuario
+                                                    </legend>
 
                                                 <div class="mb-3 row">
                                                     <label for="dni" class="col-md-2 form-label">DNI<span
@@ -98,11 +98,10 @@
 
                                             </fieldset>
 
-
-                                            <fieldset class="border p-2" style="border: 1px solid #4454C3 !important;">
-                                                <legend class="float-none w-auto p-2 form-label">
-                                                    Datos Academicos del Usuario
-                                                </legend>
+                                             <fieldset class="border p-2" style="border: 2px solid #4454C3 !important;">
+                                                    <legend  class="float-none w-auto p-2 form-label">
+                                                        Datos Academicos del Usuario
+                                                    </legend>
 
                                                 <div class="mb-3 row">
                                                     <label for="facultad" class="col-md-2 form-label">Facultad<span
@@ -169,9 +168,13 @@
                                             <div class="mb-0 row justify-content-center">
                                                 <div class="col-6">
                                                     <div class="text-center pt-1 pb-1">
-                                                        <button type="submit" class="btn btn-lg btn-primary btn-block"
-                                                            type="button"><i class="fe fe-save"></i> Registrar</button>
-                                                    </div>
+                                                        <a href="#" class="btn btn-danger btn-block" type="button" ><- Volver</a>
+                                                    </div>  
+                                                </div>
+                                                <div class="col-6">
+                                                   <div class="text-center pt-1 pb-1">
+                                                    <button type="submit" class="btn btn-lg btn-primary btn-block" type="button"><i class="fe fe-save"></i> Registrar</button>
+                                                    </div>  
                                                 </div>
                                             </div>
                                         </form>
