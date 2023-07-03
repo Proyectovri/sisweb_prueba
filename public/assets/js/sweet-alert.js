@@ -11,16 +11,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length != 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }	
     });
 
 	$("#buscarDNI_2").on("click", function (e) {
@@ -33,16 +34,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length >= 1 && $dni.length < 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }		
     });
 
 	$("#buscarDNI_3").on("click", function (e) {
@@ -55,16 +57,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length >= 1 && $dni.length < 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }	
     });
 
 	$("#buscarDNI_4").on("click", function (e) {
@@ -77,16 +80,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length >= 1 && $dni.length < 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }	
     });
 
 	$("#buscarDNI_5").on("click", function (e) {
@@ -99,16 +103,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length >= 1 && $dni.length < 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }	
     });
 
 	$("#buscarDNI_6").on("click", function (e) {
@@ -121,16 +126,17 @@ $(function () {
                 showCancelButton: false,
                 confirmButtonText: "OK",
             });
-        }
-		if ($dni.length >= 1 && $dni.length < 8) {
-            swal({
-                title: "¡Error!",
-                text: "Ingrese un DNI válido",
-                type: "error",
-                showCancelButton: false,
-                confirmButtonText: "OK",
-            });
-        }
+        }else{
+            if ($dni.length != 8 ) {
+                swal({
+                    title: "¡Error!",
+                    text: "Ingrese un DNI válido",
+                    type: "error",
+                    showCancelButton: false,
+                    confirmButtonText: "OK",
+                });
+            }
+        }	
     });
 
     // Message
